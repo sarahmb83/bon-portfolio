@@ -5,258 +5,368 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarah Bonville — Product &amp; Accessibility Designer</title>
   <meta name="description" content="Sarah Bonville is a product designer and accessibility designer focused on thoughtful, empathetic user experience.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header class="site-header">
-    <nav class="site-nav container">
+    <nav class="site-nav">
       <a class="site-nav__logo" href="/">Sarah Bonville</a>
+      <div class="site-nav__links">
+        <a href="#work">Work</a>
+        <a href="#approach">A11y</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="site-nav__cta">Get in touch</a>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>
-          Hey there, I'm<br>
-          <span class="role-rotator">
-            <span class="role-rotator__visual" aria-hidden="true">a product designer<span class="role-rotator__punct">!</span></span>
-            <span class="sr-only">a product designer, an accessibility designer, and a design-thinker!</span>
+  <main id="main-content" tabindex="-1">
+    <section id="top" class="hero">
+      <div>
+        <div class="hero__chip">
+          <span class="hero__chip-dot"></span>Open to senior + staff roles
+        </div>
+        <h1>Hey there, I'm</h1>
+        <div class="role-rotator" id="role-rotator" tabindex="0" aria-live="polite">
+          <span class="role-rotator__inner is-anim-a" id="role-rotator-inner">
+            <span class="role-rotator__line" id="role-line-1">a product</span>
+            <span class="role-rotator__line" id="role-line-2">designer<span class="role-rotator__punct">!</span></span>
           </span>
-        </h1>
-        <p class="hero__subtext">
-          Please pardon my appearance while I continue to work on my portfolio site. If you're
-          looking for specific samples of work that you don't find here, feel free to reach out
-          on <a href="#">LinkedIn</a>.
-        </p>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="container">
-        <div class="section-intro">
-          <h2>My experience</h2>
-          <p>
-            My goal is to utilize the full product design life cycle to create a thoughtful,
-            empathetic user experience, for all.
-          </p>
         </div>
+        <p class="hero__intro">I design products that work for everyone — not just the people the happy path was drawn for. Twelve years of shipping across ed-tech, insurance, and consumer apps, most of it spent making complex flows simpler and reachable by keyboard, screen reader, and low-vision users alike.</p>
+        <div class="hero__buttons">
+          <a href="#work" class="btn btn--primary">See my work <span aria-hidden="true">→</span></a>
+          <a href="#contact" class="btn btn--secondary">Say hello</a>
+        </div>
+        <p class="hero__footnote">Roles rotate automatically — hover or focus the line to hold it.</p>
+      </div>
 
-        <div class="experience-grid">
-          <div class="experience-card">
-            <div class="experience-card__logo">
-              <img src="images/ms-logo.jpg" alt="Magic School logo">
-            </div>
-            <div>
-              <div class="experience-card__company">Magic School</div>
-              <div class="experience-card__role">Senior Product Designer</div>
-            </div>
-            <div class="experience-card__dates">July 2022 — Nov 2024</div>
-          </div>
-
-          <div class="experience-card">
-            <div class="experience-card__logo">
-              <img src="images/KAlogo.png" alt="Khan Academy logo">
-            </div>
-            <div>
-              <div class="experience-card__company">Khan Academy</div>
-              <div class="experience-card__role">Senior Product Designer, Platform Accessibility</div>
-            </div>
-            <div class="experience-card__dates">July 2022 — Nov 2024</div>
-          </div>
-
-          <div class="experience-card">
-            <div class="experience-card__logo">
-              <img src="images/SLlogo.png" alt="Sun Life logo">
-            </div>
-            <div>
-              <div class="experience-card__company">Sun Life</div>
-              <div class="experience-card__role">Senior User Experience Designer</div>
-            </div>
-            <div class="experience-card__dates">Jun 2021 — Jul 2022</div>
-          </div>
-
-          <div class="experience-card">
-            <div class="experience-card__logo">
-              <img src="images/TRlogo.png" alt="Travelers Insurance Company logo">
-            </div>
-            <div>
-              <div class="experience-card__company">Travelers Insurance Company</div>
-              <div class="experience-card__role">User Experience Lead</div>
-            </div>
-            <div class="experience-card__dates">Mar 2020 — Jun 2021</div>
-          </div>
-
-          <div class="experience-card">
-            <div class="experience-card__logo">
-              <img src="images/SUlogo.png" alt="SwingU logo">
-            </div>
-            <div>
-              <div class="experience-card__company">SwingU</div>
-              <div class="experience-card__role">Senior User Interface Designer</div>
-            </div>
-            <div class="experience-card__dates">Nov 2018 — Mar 2020</div>
-          </div>
-
-          <div class="experience-card">
-            <div class="experience-card__logo">
-              <img src="images/FSlogo.png" alt="Finalsite logo">
-            </div>
-            <div>
-              <div class="experience-card__company">Finalsite</div>
-              <div class="experience-card__role">Product Designer</div>
-            </div>
-            <div class="experience-card__dates">Dec 2013 — Nov 2018</div>
-          </div>
+      <div class="hero__media">
+        <div class="hero__portrait">
+          <img src="images/sarah-river-3.jpeg" alt="Pencil sketch of Sarah walking her dog along a riverbank">
+          <div class="hero__portrait-tag">alt="Sarah + her dog, sketched"</div>
+        </div>
+        <div class="hero__now">
+          <p class="hero__now-label">Right now</p>
+          <p>Senior Product Designer at <strong>Magic School</strong>. Previously a Senior Product Designer at Khan Academy, where I also led platform accessibility.</p>
         </div>
       </div>
     </section>
 
-    <section id="work">
-      <div class="container">
-        <div class="section-intro">
-          <h2>My work</h2>
+    <section id="work" class="featured">
+      <div class="featured__header">
+        <div>
+          <span class="eyebrow">Featured work</span>
+          <h2>Projects to highlight</h2>
         </div>
+        <p class="featured__note">Some live here as full case studies, some as Figma decks. Labels tell you which.</p>
+      </div>
 
-        <div class="work-group">
-          <h3 class="work-group__heading">Quick Samples</h3>
-          <p class="work-group__intro">
-            A fast, broad look at work from across my last few roles — short samples, not
-            deep narratives.
-          </p>
-          <div class="work-grid">
-            <a class="work-card work-card--compact" href="https://www.figma.com/deck/fju7ezwpNgr0p0g1zK1BHr" target="_blank" rel="noopener noreferrer">
-              <div class="work-card__media">
-                <img src="images/quick-samples-cover.png" alt="" role="presentation">
-              </div>
-              <div class="work-card__content">
-                <div class="work-card__body">
-                  <span class="work-card__title">Quick Samples Deck</span>
-                  <span class="work-card__badge work-card__badge--link">View on Figma</span>
-                </div>
-                <p class="work-card__note">Password protected — happy to share the passcode on request.</p>
-              </div>
-            </a>
+      <div class="featured-grid">
+        <a href="https://www.figma.com/deck/AYJGJWhPne3gmrBfelLj2N" target="_blank" rel="noopener noreferrer" class="featured-card">
+          <div class="featured-card__media featured-card__media--lavender">
+            <img src="images/quizzes-magicschool-cover.png" alt="MagicSchool AI quiz editor showing a multiple-choice question about the ant life cycle, with student support toggles for translation and simplification, and AI feedback settings">
+          </div>
+          <div class="featured-card__body">
+            <p class="featured-card__eyebrow">MagicSchool AI</p>
+            <h3>MagicQuizzes: from zero to shipped</h3>
+            <p>Designed MagicSchool AI's quiz builder with built-in student supports like translation and simplified language, plus AI feedback and scoring after every question.</p>
+            <span class="pill pill--coral">Figma deck <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+
+        <a href="https://www.figma.com/deck/cHHaiDOw9lu7zLMWvVid6f/SB-•-KA-•-AX--Short-" target="_blank" rel="noopener noreferrer" class="featured-card">
+          <div class="featured-card__media featured-card__media--lavender">
+            <img src="images/feat-assessments.png" alt="Khan Academy assessment screen where Khanmigo asks a student to explain their thinking">
+          </div>
+          <div class="featured-card__body">
+            <p class="featured-card__eyebrow">Khan Academy</p>
+            <h3>Interim assessment pilot</h3>
+            <p>Reworked the practice-and-feedback loop so students learn from a wrong answer instead of stalling on it. The team was building the first pilot when I left Khan Academy.</p>
+            <span class="pill pill--coral">Figma deck <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="approach" class="section-band">
+      <div class="section-band__inner">
+        <span class="eyebrow">My approach</span>
+        <h2 class="section-heading">Accessibility case studies</h2>
+        <p class="section-band__intro">For me, accessibility is less about running through a list of individual checks (though checklists have their place) and more about building the strategy, culture, and systems that make it the default at a company, not a last step. Here's what that's looked like at two of them:</p>
+
+        <div class="approach-grid">
+          <a href="work/accessibility-khan-academy.html" class="approach-card approach-card--dark">
+            <div class="approach-card--dark__media">
+              <img src="images/feat-a11y.png" alt="">
+            </div>
+            <div class="approach-card--dark__body">
+              <span class="approach-card--dark__company">Khan Academy</span>
+              <h3>Platform accessibility, end to end</h3>
+              <p>At Khan Academy I ran accessibility across product teams: shared patterns, review rituals, and training so other designers could ship accessible work without me in the room.</p>
+              <span class="approach-card--dark__link">See the case study <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="work/accessibility-magicschool.html" class="approach-card approach-card--dark">
+            <div class="approach-card--dark__media">
+              <img src="images/a11y-cover.png" alt="">
+            </div>
+            <div class="approach-card--dark__body">
+              <span class="approach-card--dark__company">MagicSchool AI</span>
+              <h3>Building an accessibility practice</h3>
+              <p>At MagicSchool AI I built the company's entire accessibility practice from scratch: audit, VPAT, a weekly cross-functional Guild, and a design system with accessibility built in by default.</p>
+              <span class="approach-card--dark__link">See the case study <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="company-work">
+      <h2>All my work, by company</h2>
+      <p class="company-work__intro">Short work samples that show the breadth of my work. Reach out for longer case studies!</p>
+
+      <a href="https://www.figma.com/deck/fju7ezwpNgr0p0g1zK1BHr" target="_blank" rel="noopener noreferrer" class="quick-samples-card">
+        <div class="quick-samples-card__media">
+          <img src="images/quick-samples-cover.png" alt="">
+        </div>
+        <div class="quick-samples-card__body">
+          <div>
+            <span class="quick-samples-card__title">Quick samples deck</span>
+            <p class="quick-samples-card__desc">A handful of really short samples spanning years of work, to quickly show breadth.</p>
+          </div>
+          <span class="pill pill--coral pill--small">Figma deck <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+
+      <div class="company-group__heading">
+        <h3>MagicSchool AI</h3>
+        <span class="company-group__rule"></span>
+        <span class="company-group__dates">2025 — now</span>
+      </div>
+      <div class="company-grid">
+        <a href="https://www.figma.com/deck/AYJGJWhPne3gmrBfelLj2N" target="_blank" rel="noopener noreferrer" class="company-card">
+          <div class="company-card__media">
+            <img src="images/quizzes-magicschool-cover.png" alt="">
+          </div>
+          <div class="company-card__footer">
+            <span class="company-card__title">Quizzes</span>
+            <span class="pill pill--coral pill--small">Figma deck <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+        <div class="company-card is-soon">
+          <div class="company-card__media">
+            <img src="images/placeholder 2.svg" alt="" role="presentation">
+          </div>
+          <div class="company-card__footer">
+            <span class="company-card__title">Student Room revamp</span>
+            <span class="pill pill--soon">Coming soon</span>
           </div>
         </div>
-
-        <div class="work-group">
-          <h3 class="work-group__heading work-group__heading--soon">Magic School — coming soon!</h3>
-          <div class="work-grid">
-            <div class="work-card is-soon">
-              <div class="work-card__media">
-                <img src="images/placeholder 1.svg" alt="" role="presentation">
-              </div>
-              <div class="work-card__body">
-                <span class="work-card__title">Quizzes</span>
-                <span class="work-card__badge work-card__badge--soon">Coming soon</span>
-              </div>
-            </div>
-            <div class="work-card is-soon">
-              <div class="work-card__media">
-                <img src="images/placeholder 2.svg" alt="" role="presentation">
-              </div>
-              <div class="work-card__body">
-                <span class="work-card__title">Student Room Revamp</span>
-                <span class="work-card__badge work-card__badge--soon">Coming soon</span>
-              </div>
-            </div>
+        <a href="work/accessibility-magicschool.html" class="company-card">
+          <div class="company-card__media">
+            <img src="images/a11y-cover.png" alt="">
           </div>
-        </div>
-
-        <div class="work-group">
-          <h3 class="work-group__heading">Khan Academy</h3>
-          <div class="work-grid">
-            <a class="work-card" href="work/accessibility-khan-academy.html">
-              <div class="work-card__media">
-                <img src="images/portfolio 1 - wide.svg" alt="" role="presentation">
-              </div>
-              <div class="work-card__body">
-                <span class="work-card__title">Accessibility Design</span>
-                <span class="work-card__badge work-card__badge--link">View case study</span>
-              </div>
-            </a>
-
-            <a class="work-card" href="https://www.figma.com/deck/cHHaiDOw9lu7zLMWvVid6f/SB-•-KA-•-AX--Short-" target="_blank" rel="noopener noreferrer">
-              <div class="work-card__media">
-                <img src="images/portfolio 2 - wide.svg" alt="" role="presentation">
-              </div>
-              <div class="work-card__body">
-                <span class="work-card__title">Assessments</span>
-                <span class="work-card__badge work-card__badge--link">View on Figma</span>
-              </div>
-            </a>
-
-            <div class="work-card is-soon">
-              <div class="work-card__media">
-                <img src="images/placeholder 3.svg" alt="" role="presentation">
-              </div>
-              <div class="work-card__body">
-                <span class="work-card__title">Interactive Graph</span>
-                <span class="work-card__badge work-card__badge--soon">Coming soon</span>
-              </div>
-            </div>
-
-            <div class="work-card is-soon">
-              <div class="work-card__media">
-                <img src="images/placeholder 1.svg" alt="" role="presentation">
-              </div>
-              <div class="work-card__body">
-                <span class="work-card__title">Course and Unit Revamp</span>
-                <span class="work-card__badge work-card__badge--soon">Coming soon</span>
-              </div>
-            </div>
+          <div class="company-card__footer">
+            <span class="company-card__title">Accessibility design</span>
+            <span class="pill pill--purple pill--small">Case study <span aria-hidden="true">→</span></span>
           </div>
-        </div>
+        </a>
+      </div>
 
-        <div class="work-group">
-          <h3 class="work-group__heading work-group__heading--soon">A11y @ Travelers — coming soon!</h3>
-        </div>
+      <div class="company-group__heading">
+        <h3>Khan Academy</h3>
+        <span class="company-group__rule"></span>
+        <span class="company-group__dates">2022 — 2024</span>
+      </div>
+      <div class="company-grid">
+        <a href="https://www.figma.com/deck/cHHaiDOw9lu7zLMWvVid6f/SB-•-KA-•-AX--Short-" target="_blank" rel="noopener noreferrer" class="company-card">
+          <div class="company-card__media">
+            <img src="images/feat-assessments.png" alt="">
+          </div>
+          <div class="company-card__footer">
+            <span class="company-card__title">Assessments</span>
+            <span class="pill pill--coral pill--small">Figma deck <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+        <a href="work/accessibility-khan-academy.html" class="company-card">
+          <div class="company-card__media">
+            <img src="images/feat-a11y.png" alt="">
+          </div>
+          <div class="company-card__footer">
+            <span class="company-card__title">Accessibility design</span>
+            <span class="pill pill--purple pill--small">Case study <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </div>
 
-        <div class="work-group">
-          <h3 class="work-group__heading work-group__heading--soon">Sun Life — coming soon!</h3>
-        </div>
+      <div class="company-group__heading">
+        <h3>Sun Life</h3>
+        <span class="company-group__rule"></span>
+        <span class="company-group__dates">2021 — 2022</span>
+      </div>
+      <div class="company-grid">
+        <a href="https://www.figma.com/deck/uOc9vZQoz2xnYfngGE8Quu" target="_blank" rel="noopener noreferrer" class="company-card">
+          <div class="company-card__media">
+            <img src="images/sunlife-claims-cover.png" alt="">
+          </div>
+          <div class="company-card__footer">
+            <span class="company-card__title">Member dental portal</span>
+            <span class="pill pill--coral pill--small">Figma deck <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="experience" class="section-band">
+      <div class="section-band__inner">
+        <span class="eyebrow">Experience</span>
+        <h2 class="section-heading" style="margin-bottom: 44px; max-width: none;">Twenty+ years of digital design</h2>
+
+        <ol class="timeline-list">
+          <li>
+            <div class="timeline-row">
+              <span class="timeline-date">2025 — now</span>
+              <img class="timeline-logo" src="images/trim-magicschool.png" alt="Magic School logo">
+              <span class="timeline-role"><strong>Senior Product Designer</strong><span> · Magic School</span></span>
+              <span class="pill pill--purple pill--small">Current</span>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-row">
+              <span class="timeline-date">2022 — 2024</span>
+              <img class="timeline-logo" src="images/trim-khan.png" alt="Khan Academy logo">
+              <span class="timeline-role"><strong>Senior Product Designer, Platform Accessibility</strong><span> · Khan Academy</span></span>
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-row">
+              <span class="timeline-date">2021 — 2022</span>
+              <img class="timeline-logo" src="images/trim-sunlife.png" alt="Sun Life logo">
+              <span class="timeline-role"><strong>Senior User Experience Designer</strong><span> · Sun Life</span></span>
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-row">
+              <span class="timeline-date">2020 — 2021</span>
+              <img class="timeline-logo" src="images/trim-travelers.png" alt="Travelers Insurance logo">
+              <span class="timeline-role"><strong>User Experience Lead</strong><span> · Travelers Insurance</span></span>
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-row">
+              <span class="timeline-date">2018 — 2020</span>
+              <img class="timeline-logo" src="images/trim-swingu.png" alt="SwingU logo">
+              <span class="timeline-role"><strong>Senior User Interface Designer</strong><span> · SwingU</span></span>
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-row">
+              <span class="timeline-date">2013 — 2018</span>
+              <img class="timeline-logo" src="images/trim-finalsite.png" alt="Finalsite logo">
+              <span class="timeline-role"><strong>Product Designer</strong><span> · Finalsite</span></span>
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-row timeline-row--roots">
+              <span class="timeline-date">2005 — 2013</span>
+              <span class="timeline-roots-pill">ROOTS</span>
+              <span>
+                <strong style="font-family: var(--font-display); font-weight: 600; font-size: 20px; letter-spacing: -0.02em;">Early career</strong><span style="color: var(--color-body); font-size: 16.5px;"> · Miranda Creative, Pyramid Marketing Design &amp; Technology</span>
+                <span class="timeline-roots-body">Website designer and front-end developer at two Connecticut creative agencies — client work, hand-written HTML/CSS, and the habit of shipping. Before UX was a job title.</span>
+              </span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <span class="eyebrow">About</span>
+        <h2>Nice to meet you.</h2>
+      </div>
+      <div class="about__body">
+        <p>I got my start at small creative agencies, designing and building websites by hand, before content management systems existed and before "UX" was even a job title.</p>
+        <p>A big part of that work was watching, observing, and listening to the people actually using what I built, and that's still at the core of how I design today. I work across the full UX and product design lifecycle: research, system design, and prototyping, through launch and iteration.</p>
+        <p>Outside of work, I like walking my dog through the woods, spending time with my family, and traveling to new places. I also love a good tea blend.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <span>&copy; Sarah Bonville</span>
-      <div class="site-footer__links">
-        <a href="#">LinkedIn</a>
-        <span class="site-footer__wip">WIP &hearts;</span>
+  <footer id="contact" class="site-footer">
+    <div class="site-footer__inner">
+      <h2>Let's make something.</h2>
+      <p class="site-footer__intro">Looking for a senior or staff product designer who sweats accessibility? LinkedIn is the fastest way to reach me.</p>
+      <div class="site-footer__buttons">
+        <a href="https://www.linkedin.com/in/sarah-bonville-123pd/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://www.figma.com/proto/pdY0xi0nJLHJRjoecqbl7G/Resume--Portfolio-?node-id=1-7&t=blmMRN3ILXoQI2n8-1" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Résumé <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="site-footer__meta">
+        <span>© 2026 Sarah Bonville • built with care, keyboard-tested, screen reader tested</span>
+        <span>Hartford, CT · remote-friendly</span>
       </div>
     </div>
   </footer>
 
   <script>
     (function () {
-      var visual = document.querySelector('.role-rotator__visual');
-      if (!visual) return;
+      var rotator = document.getElementById('role-rotator');
+      var inner = document.getElementById('role-rotator-inner');
+      var line1 = document.getElementById('role-line-1');
+      var line2 = document.getElementById('role-line-2');
+      if (!rotator) return;
 
       var roles = [
-        { text: 'a product designer', color: 'var(--color-role-1)' },
-        { text: 'an accessibility designer', color: 'var(--color-role-2)' },
-        { text: 'a design-thinker', color: 'var(--color-role-3)' }
+        { l1: 'a product', l2: 'designer', color: '#4b34d4' },
+        { l1: 'a design', l2: 'thinker', color: '#c2189a' },
+        { l1: 'an accessibility', l2: 'designer', color: '#6e2bd9' }
       ];
 
-      visual.style.color = roles[0].color;
+      var index = 0;
+      var paused = false;
+      var timer = null;
+      var cycleMs = 2800;
+
+      function render() {
+        var r = roles[index];
+        rotator.style.color = r.color;
+        line1.textContent = r.l1;
+        line2.innerHTML = r.l2 + '<span class="role-rotator__punct">!</span>';
+        inner.classList.remove('is-anim-a', 'is-anim-b');
+        // Force reflow so the animation restarts even when re-adding the same class.
+        void inner.offsetWidth;
+        inner.classList.add(index % 2 ? 'is-anim-b' : 'is-anim-a');
+      }
+
+      render();
 
       var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (prefersReducedMotion) return;
 
-      var index = 0;
-      setInterval(function () {
-        visual.classList.add('is-hidden');
-        setTimeout(function () {
-          index = (index + 1) % roles.length;
-          visual.innerHTML = roles[index].text + '<span class="role-rotator__punct">!</span>';
-          visual.style.color = roles[index].color;
-          visual.classList.remove('is-hidden');
-        }, 350);
-      }, 2600);
+      timer = setInterval(function () {
+        if (paused) return;
+        index = (index + 1) % roles.length;
+        render();
+      }, cycleMs);
+
+      rotator.addEventListener('mouseenter', function () { paused = true; });
+      rotator.addEventListener('mouseleave', function () { paused = false; });
+      rotator.addEventListener('focus', function () { paused = true; });
+      rotator.addEventListener('blur', function () { paused = false; });
     })();
   </script>
 </body>

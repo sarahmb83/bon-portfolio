@@ -5,17 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accessibility at Khan Academy — Sarah Bonville</title>
   <meta name="description" content="How Sarah Bonville leads accessibility at the design team level and drives strategic a11y efforts across the Khan Academy platform.">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header class="site-header">
-    <nav class="site-nav container">
+    <nav class="site-nav">
       <a class="site-nav__logo" href="/">Sarah Bonville</a>
+      <div class="site-nav__links">
+        <a href="/#work">Work</a>
+        <a href="/#approach">A11y</a>
+        <a href="/#experience">Experience</a>
+        <a href="/#about">About</a>
+        <a href="/#contact" class="site-nav__cta">Get in touch</a>
+      </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="case-hero">
       <div class="container">
         <h1>Accessibility</h1>
@@ -23,8 +35,8 @@
       </div>
     </section>
 
-    <section>
-      <div class="container overview-grid">
+    <section class="case-study-section">
+      <div class="overview-grid">
         <div>
           <span class="eyebrow">Project Overview</span>
           <p>
@@ -52,47 +64,52 @@
     </section>
 
     <section class="full-width-image">
-      <img src="../images/a11y KA.png" alt="Overview collage of accessibility work at Khan Academy">
+      <div class="container">
+        <img src="../images/a11y KA.png" alt="Overview collage of accessibility work at Khan Academy">
+      </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div class="annotations-intro">
-          <h2>A11y design annotations</h2>
-          <span class="eyebrow">Feature project: Course and unit revamp</span>
-          <p>
-            This project was to revamp our course and unit pages at Khan Academy. Part of
-            design review and deliverables to our cross-functional team includes design
-            review for a11y, documentation via comments or Figma a11y annotations, and
-            collaboration with PMs and Engineers to align on a11y needs ahead of time.
-            Here's a few examples:
-          </p>
-        </div>
+    <section class="case-study-section">
+      <div class="annotations-intro">
+        <h2>A11y design annotations</h2>
+        <span class="eyebrow">Feature project: Course and unit revamp</span>
+        <p>
+          This project was to revamp our course and unit pages at Khan Academy. Part of
+          design review and deliverables to our cross-functional team includes design
+          review for a11y, documentation via comments or Figma a11y annotations, and
+          collaboration with PMs and Engineers to align on a11y needs ahead of time.
+          Here's a few examples:
+        </p>
+      </div>
 
-        <div class="annotation-block">
-          <h3>A11y annotations for skip link, landmarks and headings</h3>
-          <img src="../images/a11y annotations skip link, landmarks, headings.png" alt="A user interface showing accessibility annotations for skip link, landmarks and headings">
-        </div>
+      <div class="annotation-block">
+        <h3>A11y annotations for skip link, landmarks and headings</h3>
+        <img src="../images/a11y annotations skip link, landmarks, headings.png" alt="A user interface showing accessibility annotations for skip link, landmarks and headings">
+      </div>
 
-        <div class="annotation-block">
-          <h3>A11y annotations for links, buttons, images, tooltips</h3>
-          <img src="../images/a11y annotations - links, buttons, images, tooltips.png" alt="A user interface showing accessibility annotations for links, buttons, images and tooltips">
-        </div>
+      <div class="annotation-block">
+        <h3>A11y annotations for links, buttons, images, tooltips</h3>
+        <img src="../images/a11y annotations - links, buttons, images, tooltips.png" alt="A user interface showing accessibility annotations for links, buttons, images and tooltips">
+      </div>
 
-        <div class="annotation-block">
-          <h3>A11y annotations for focus order (or TAB stops)</h3>
-          <img src="../images/a11y annotations - focus order.png" alt="A user interface showing accessibility annotations for focus order or tab stops">
-        </div>
+      <div class="annotation-block">
+        <h3>A11y annotations for focus order (or TAB stops)</h3>
+        <img src="../images/a11y annotations - focus order.png" alt="A user interface showing accessibility annotations for focus order or tab stops">
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <span>&copy; Sarah Bonville</span>
-      <div class="site-footer__links">
-        <a href="#">LinkedIn</a>
-        <span class="site-footer__wip">WIP &hearts;</span>
+  <footer id="contact" class="site-footer">
+    <div class="site-footer__inner">
+      <h2>Let's make something.</h2>
+      <p class="site-footer__intro">Looking for a senior or staff product designer who sweats accessibility? LinkedIn is the fastest way to reach me.</p>
+      <div class="site-footer__buttons">
+        <a href="https://www.linkedin.com/in/sarah-bonville-123pd/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://www.figma.com/proto/pdY0xi0nJLHJRjoecqbl7G/Resume--Portfolio-?node-id=1-7&t=blmMRN3ILXoQI2n8-1" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Résumé <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="site-footer__meta">
+        <span>© 2026 Sarah Bonville • built with care, keyboard-tested, screen reader tested</span>
+        <span>Hartford, CT · remote-friendly</span>
       </div>
     </div>
   </footer>
